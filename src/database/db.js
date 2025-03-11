@@ -6,6 +6,7 @@ const connectionString = `mongodb+srv://secret:secret@mysalah.wjoe5.mongodb.net/
 const database = mongoose.createConnection(MONGODB_URL, {
 	autoCreate: true,
 	dbName: 'MY_SALAH_DB',
+	bufferCommands: false, // Bufferingni o‘chirib qo‘yish
 });
 
 database.on('connected', () => {
