@@ -9,7 +9,7 @@ const app = express();
     await connectDB(); // ✅ MongoDB ulanishini kutamiz
     await userCommands();
     await schedulePrayerReminders();
+    require('./src/commands/bot.command')
   })();
-require('./src/commands/bot.command')
 
 app.listen(3000, () => console.log("Server is running on port 3000"));

@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const {database} = require('../database/db');
 
 const taskModel = new mongoose.Schema({
     userId: {
@@ -25,4 +24,4 @@ const taskModel = new mongoose.Schema({
     timestamps: true
 });
 
-module.exports = database.model('Task', taskModel); 
+module.exports = mongoose.model('Task', taskModel); 

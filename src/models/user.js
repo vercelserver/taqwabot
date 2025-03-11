@@ -1,5 +1,4 @@
 const mongoose = require('mongoose');
-const {database} = require('../database/db');
 
 const user = new mongoose.Schema({
     userId: { type: Number, required: true, unique: true },
@@ -16,4 +15,4 @@ const user = new mongoose.Schema({
     timestamps: true
 });
 
-module.exports = database.model('user', user); 
+module.exports = mongoose.model('user', user); 
