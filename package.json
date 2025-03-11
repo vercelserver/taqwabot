@@ -1,7 +1,6 @@
 {
-  "name": "daily salah",
+  "name": "daily-salah",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,5 +22,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://vercelserver@github.com/vercelserver/taqwabot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vercelserver/taqwabot/issues"
+  },
+  "homepage": "https://github.com/vercelserver/taqwabot#readme",
+  "description": ""
 }
