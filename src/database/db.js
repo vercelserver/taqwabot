@@ -8,7 +8,9 @@ const connectDB = async () => {
 	try {
 	  await mongoose.connect(MONGODB_URL, {
 		dbName: "MY_SALAH_DB",
-		autoCreate: true
+		autoCreate: true,
+		connectTimeoutMS: 60000, // Increase timeout (default is 30s)
+		socketTimeoutMS: 60000, // Keep socket open longer
 	  });
   
 	  console.log(`⚡️[database]: MongoDB is running at ${MONGODB_URL}`);
