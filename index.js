@@ -15,6 +15,8 @@ async function start() {
 
 start();
 
+
+
 // telegram bot commands
 userCommands();
 schedulePrayerReminders();
