@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const database = require('../database/db');
+const {database} = require('../database/db');
 
 const user = new mongoose.Schema({
     userId: { type: Number, required: true, unique: true },
