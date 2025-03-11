@@ -1,4 +1,4 @@
-onst mongoose = require("mongoose");
+const mongoose = require("mongoose");
 const { MONGODB_URL } = require("../../env");
 
 const connectionString = MONGODB_URL || "mongodb+srv://secret:secret@mysalah.wjoe5.mongodb.net/?retryWrites=true&w=majority&appName=MySalah";
