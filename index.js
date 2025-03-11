@@ -4,18 +4,8 @@ const express = require("express");
 
 const app = express();
 
-async function start() {
-    try {
-        require('./src/database/db');
-        require('./src/commands/bot.command')
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-start();
-
-
+require('./src/database/db');
+require('./src/commands/bot.command')
 
 // telegram bot commands
 userCommands();
