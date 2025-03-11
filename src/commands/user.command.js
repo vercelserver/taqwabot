@@ -6,7 +6,7 @@ const messages = require('../services/messages');
 const COMMANDS = require('../enum/commands.enum');
 const { randomHadith, books_slug, fetchHadithByBook } = require('../services/hadith.service');
 
-module.exports = function () {
+module.exports = async function () {
 
     bot.onText(new RegExp(`^${COMMANDS.START}$`), async (msg) => {
         const { id: userId, first_name: firstName } = msg.from;
